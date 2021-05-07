@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Up2Date</string>
+    <string name="item_text">Item Text</string>
 </resources>
