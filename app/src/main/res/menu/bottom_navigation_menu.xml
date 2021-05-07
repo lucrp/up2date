@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_fragment1"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Fragment1" />
+    <item
+        android:id="@+id/action_fragment2"
+        android:title="Fragment2"
+        android:icon="@drawable/ic_baseline_airplanemode_active_24" />
+    <item
+        android:id="@+id/action_fragment3"
+        android:title="Fragment3"
+        android:icon="@drawable/ic_baseline_directions_car_24" />
+</menu>
