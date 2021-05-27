@@ -4,26 +4,20 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-tools:context=".HomeFragment">
+tools:context=".HomeFragment"
+android:background="@color/colorGrey">
 
 <androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/reciclerView"
+    android:id="@+id/recyclerView"
     android:layout_width="match_parent"
     android:layout_height="0dp"
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintBottom_toTopOf="@+id/tilTodo"
+    app:layout_constraintBottom_toBottomOf="parent"
     tools:itemCount="10"
+    tools:listitem="@layout/headline_card"
     />
-
-<com.google.android.material.textfield.TextInputLayout
-    android:id="@+id/tilTodo"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:text="@string/item_text"
-    />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
