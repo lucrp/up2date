@@ -1,23 +1,18 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
-    ext {
-        version_moshi = "1.8.0"
-        version_retrofit = "2.5.0"
-        version_retrofit_coroutines_adapter = "0.9.2"
-        version_kotlin_coroutines = "1.1.0"
-        version_retrofit_coroutines_adapter = "0.9.2"
-    }
-    ext.kotlin_version = "1.5.10"
+    ext.kotlin_version = "1.4.30"
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.2.1'
+        def gradle = '7.1.0-alpha01'
+        classpath "com.android.tools.build:gradle:$gradle"
+
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        def hilt = "2.28-alpha"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt"
     }
 }
 
@@ -25,7 +20,6 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
     }
 }
 
